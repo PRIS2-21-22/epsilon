@@ -7,13 +7,12 @@ class epsilon:
             self.value=[a,b,d]
         else: #trapezoide
             self.value=[self,a,b,d]
-
+            
     def suma(self,num):
             if len(self.value)==3 and leng(num.value)==3:
                 return [self.value[0] + num.value[0], self.value[1] + num.value[1], self.value[2] + num.value[2]]
             else:
                 return [self.value[0] + num.value[0], self.value[1] + num.value[1], self.value[2] + num.value[2], self.value[3] + num.value[3]]
-
             
     def resta(self, num):
         if(len(num.value) == 3 and len(self.value) == 3):
