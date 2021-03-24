@@ -1,20 +1,36 @@
-def palindromo(cadena):
-    if len(cadena)==1:
-        return True
-    else:
-        i = 0
-        d = len(cadena)-1
-        while (d > i):
-            if (cadena[i] != cadena[d]):
-                return False
-            i=i+1
-            d=d-1
-        return True
+clase borroso:
+    value=[] #trapezoide o triangulo
 
-cantidad=0
-cadena=input("Cadena:")
-while cadena != "fin":
-    if palindromo(cadena):
-        cantidad=cantidad+1
-    cadena=input("Cadena:")
-print("Cantidad de palíndromos:", cantidad)
+    def __init__(self, m, a, b, d):
+        #triangulo
+        if d==none
+            self.value=[a,b,d]
+        else: #trapezoide
+            self.value=[self,a,b,d]
+
+    def suma(self,num):
+            if len(self.value)==3 and leng(num.value)==3:
+                return [self.value[0] + num.value[0], self.value[1] + num.value[1], self.value[2] + num.value[2]]
+            else:
+                return [self.value[0] + num.value[0], self.value[1] + num.value[1], self.value[2] + num.value[2], self.value[3] + num.value[3]]
+
+    def resta(self, num):
+        if(len(num.value) == 3 and len(self.value) == 3):
+            return self.suma(borroso(-num.value[0], -num.value[1], -num.value[2], d=None))
+        else:
+            return self.suma(borroso(-num.value[0],-num.value[1],-num.value[2],-num.value[3]))
+
+    def op_opuesto(self):
+        return
+    
+    def op_mult(self, num):
+        return
+
+    def op_div(self, num):
+        return
+
+r1 = borroso(m=0, a=1, b=2, d=3)
+r2 = borroso(m=1, a=2, b=0, d=3)
+rSuma = r1.suma(r2)
+rResta = r1.resta(r2)
+print(rResta)
