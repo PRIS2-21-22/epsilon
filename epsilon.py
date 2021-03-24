@@ -1,4 +1,4 @@
-clase borroso:
+clase epsilon:
     value=[] #trapezoide o triangulo
 
     def __init__(self, m, a, b, d):
