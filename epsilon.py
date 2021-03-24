@@ -1,6 +1,6 @@
 class epsilon:
     
-    value=[] #trapezoide o triangulo
+    value = [] #trapezoide o triangulo
 
     def __init__(self, m, a, b, d):
         #triangulo
